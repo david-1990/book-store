@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/Default.css">
+    <!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <title>Book Strike</title>
+
+    <header>
+    <!--Navigation Bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <img class="img-fluid" src="./../Images/Logo.PNG" style="padding-right: 300px;">  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="Index.html" style="color: black;" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: black;" >Listed Books
+            </a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Fiction.html" style="color: black;" >Fiction</a>
+              <a class="dropdown-item" href="Non-fiction.html" style="color: black;" >Non-Fiction</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="BookListing.html" style="color: black;" >List a Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WatchList.html" style="color: black;" >My WatchList</a>
+          </li>
+          </ul>
+        
+      </div>
+    </div>
+  </nav>
+</header>   
+  
+<main>
+  <!-- Jumbotron -->
+ <div class="jumbotron jumbotron-fluid card card-image" style="background-image: url(travel/Images/jumbo2.jpg); background-size:contain;">
+  <div class="card-body text-center mb-3">
+    <h1 class="card-title h3 my-4" style="color: black; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 35px;">Book Strike</h1>
+    <p class="card-text py-2" style="color: black; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">Become a member of Book Strike and list your own book on our website!</p>
+    <button class="btn purple-gradient" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Register</button>
+    <button class="btn aqua-gradient" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Login</button>
+  </div>
+</div>
+
+
+
+<!--Main Header-->
+<h1 style="text-align: center; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Top 5 Books </h1>
+    <hr class="extra-margins">  
+
+    <!--Card sections-->
+ <section>
+   <div class="container-fluid">
+     <div class="container">
+ <div class="row row-cols-2 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100">
+
+      <!--Card image-->
+      <img class="img-fluid" src="Images\Fiction1.jpg" alt="Card image cap" id="mainimage">
+
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Hunger Games</h4>
+        <!--Text-->
+        <p class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Author: Suzanne Collins <br><br> ISBN: 978-0-545-22993-7 <br><br> Category: Adventure Dystopian Science fiction <br><br> Starting Bid: $19.70 <br><br> Availability: Available <br><br> Highest Bid: $50.00 <br><br> Duration: 2 Days Left</p>
+        
+        <!-- Add to WatchList Checkbox-->
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+          <label class="form-check-label" for="materialContactFormCopy" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Add to WatchList</label>
+        </div>
+      </div>
+      <div class="card-footer text-center" id="cardfooter">
+        <a href="#" class="btn btn-secondary" data-toggle="modal"data-target="#HungerGames" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;"> More Info</a>
+      </div>
+      
+</div>
+</div>
+<!--First column-->
+
+
+<!--Card column 2-->
+<div class="col mb-4">
+    <div class="card h-100">
+
+      <!--Card image-->
+      <img class="img-fluid" src="Images\Fiction2.jpg"alt="Card image cap" id="mainimage">
+
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Harry Potter and The Order of The Phoenix</h4>
+        <!--Text-->
+        <p class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Author: J.K. Rowling <br><br> ISBN: 978-1-408-85569-0 <br><br> Category: Fantasy <br><br> Starting Bid: $30.95 <br><br> Availability: Available <br><br> Highest Bid: $45.00 <br><br> Duration: 1 Day Left</p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+          <label class="form-check-label" for="materialContactFormCopy" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Add to WatchList</label>
+        </div>
+      </div>
+      <div class="card-footer text-center" id="cardfooter">
+        <a href="#" class="btn btn-secondary" data-toggle="modal"data-target="#HarryPotter" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;"> More Info</a>
+      </div>
+  
+      </div>
+
+    </div>
+<!--Second columnn-->
+
+
+  <!--Card column 3-->
+  <div class="col mb-4">
+    <div class="card h-100">
+      <!--Card image-->
+      <img class="img-fluid" src="Images\Fiction3.jpg" alt="Card image cap" id="mainimage">
+
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Twilight</h4>
+        <!--Text-->
+        <p class="card-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Author: Stephenie Meyer <br><br> ISBN: 978-1-904-23365-7 <br><br> Category: Romance, fantasy, young adult fiction <br><br> Starting Bid: $12.00 <br><br> Availability: Bidded <br><br> Highest Bid: $25.00</p>
+        <br><br>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+          <label class="form-check-label" for="materialContactFormCopy" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Add to WatchList</label>
+        </div>
+      </div>
+      <div class="card-footer text-center" id="cardfooter">
+        <a href="#" class="btn btn-secondary" data-toggle="modal"data-target="#Twilight" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;"> More Info</a>
+      </div>
+  
+    </div>
+  </div>
+  <!--Third columnn-->
+
+<!--Container for card-->
+  <div class="container-fluid bg-3 text-center" >
+<br>
+<!--Card 4-->
+<div class="col mb-4">
+ <div class="card h-100">
+
+    <!--Card image-->
+    <img class="img-fluid" src="Images\Non-Fiction1.jpg" alt="Card image cap" id="mainimage">
+
+    <!--Card content-->
+    <div class="card-body">
+      <!--Title-->
+      <h4 class="card-title" style="text-align: left; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Everything is F*cked A Book About Hope</h4>
+      <!--Text-->
+      <p class="card-text" style="text-align: left; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Author: Mark Manson <br><br> ISBN: 978-0-062-88843-3 <br><br> Category: Self Help <br><br> Starting Bid: $26.60 <br><br> Availability: Available <br><br> Highest Bid: $45.00 <br><br> Duration: 5 Days Left</p>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+        <label class="form-check-label" for="materialContactFormCopy" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder; text-align:left;">Add to WatchList</label>
+      </div>
+    </div>
+    <div class="card-footer text-center" id="cardfooter">
+      <a href="#" class="btn btn-secondary" data-toggle="modal"data-target="#Fucked" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;"> More Info</a>
+    </div>
+  </div>
+</div>
+ </div>
+
+<!--Container for card-->
+  <div class="container-fluid bg-3 text-center" >
+<br>
+<div class="col mb-4">
+<div class="card h-100">
+  <!--Card image-->
+  <img class="img-fluid" src="Images\Non-Fiction2.jpg" alt="Card image cap" id="mainimage">
+
+  <!--Card content-->
+  <div class="card-body">
+    <!--Title-->
+    <h4 class="card-title" style="text-align: left; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">The Moment of Lift, How Empowering Women Changes The World</h4>
+    <!--Text-->
+    <p class="card-text" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Author: Melinda Gates <br><br> ISBN: 978-1-250-31357-7 <br><br> Category: Biography <br><br> Starting Bid: $12.95 <br><br> Availability: Bidded <br><br> Highest Bid: $50.00</p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
+      <label class="form-check-label" for="materialContactFormCopy" style="text-align: left; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Add to WatchList</label>
+    </div>
+  </div>
+  <div class="card-footer text-center" id="cardfooter">
+    <a href="#" class="btn btn-secondary" data-toggle="modal"data-target="#Women" style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;"> More Info</a>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+     
+  <!-- More Info Modal for Card -->   
+<div class="modal fade" id="HungerGames" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Short Description</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p style="text-align: justify;">In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and once girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.</p>
+              <p style="text-align: justify;">Sixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+     
+ <!-- More Info Modal for Card -->
+      <div class="modal fade" id="HarryPotter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Short Description</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p style="text-align: justify;">There is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?</p>
+              <p style="text-align: justify;">Harry has a lot on his mind for this, his fifth year at Hogwarts: a Defense Against the Dark Arts teacher with a personality like poisoned honey; a big surprise on the Gryffindor Quidditch team; and the looming terror of the Ordinary Wizarding Level exams. But all these things pale next to the growing threat of He-Who-Must-Not-Be-Named - a threat that neither the magical government nor the authorities at Hogwarts can stop.</p>
+              <p style="text-align: justify;">As the grasp of darkness tightens, Harry must discover the true depth and strength of his friends, the importance of boundless loyalty, and the shocking price of unbearable sacrifice.</p>
+              <p style="text-align: justify;">His fate depends on them all.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+   
+     <!-- More Info Modal for Card -->
+    <div class="modal fade" id="Twilight" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Short Description</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: justify;">About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him—and I didn't know how dominant that part might be—that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    
+ <!-- More Info Modal for Card -->
+    <div class="modal fade" id="Fucked" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Short Description</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: justify;">We live in an interesting time. Materially, everything is the best it’s ever been—we are freer, healthier and wealthier than any people in human history. Yet, somehow everything seems to be irreparably and horribly f*cked—the planet is warming, governments are failing, economies are collapsing, and everyone is perpetually offended on Twitter. At this moment in history, when we have access to technology, education and communication our ancestors couldn’t even dream of, so many of us come back to an overriding feeling of hopelessness.
+            </p>
+            <p style="text-align: justify;">What’s going on? If anyone can put a name to our current malaise and help fix it, it’s Mark Manson. In 2016, Manson published The Subtle Art of Not Giving A F*ck, a book that brilliantly gave shape to the ever-present, low-level hum of anxiety that permeates modern living. He showed us that technology had made it too easy to care about the wrong things, that our culture had convinced us that the world owed us something when it didn’t—and worst of all, that our modern and maddening urge to always find happiness only served to make us unhappier. Instead, the “subtle art” of that title turned out to be a bold challenge: to choose your struggle; to narrow and focus and find the pain you want to sustain. The result was a book that became an international phenomenon, selling millions of copies worldwide while becoming the #1 bestseller in 13 different countries.
+            </p>
+            <p style="text-align: justify;">Now, in Everthing Is F*cked, Manson turns his gaze from the inevitable flaws within each individual self to the endless calamities taking place in the world around us. Drawing from the pool of psychological research on these topics, as well as the timeless wisdom of philosophers such as Plato, Nietzsche, and Tom Waits, he dissects religion and politics and the uncomfortable ways they have come to resemble one another. He looks at our relationships with money, entertainment and the internet, and how too much of a good thing can psychologically eat us alive. He openly defies our definitions of faith, happiness, freedom—and even of hope itself.
+            </p>
+            <p style="text-align: justify;">With his usual mix of erudition and where-the-f*ck-did-that-come-from humor, Manson takes us by the collar and challenges us to be more honest with ourselves and connected with the world in ways we probably haven’t considered before. It’s another counterintuitive romp through the pain in our hearts and the stress of our soul. One of the great modern writers has produced another book that will set the agenda for years to come. 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- More Info Modal for Card -->
+    <div class="modal fade" id="Women" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Short Description</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: justify;">For the last twenty years, Melinda Gates has been on a mission. Her goal, as co-chair of the Bill & Melinda Gates Foundation, has been to find solutions for people with the most urgent needs, wherever they live. Throughout this journey, one thing has become increasingly clear to her: If you want to lift a society up, invest in women.
+            </p>
+            <p style="text-align: justify;">In this candid and inspiring book, Gates traces her awakening to the link between women's empowerment and the health of societies. She shows some of the tremendous opportunities that exist right now to “turbo-charge" change. And she provides simple and effective ways each one of us can make a difference.
+            </p>
+            <p style="text-align: justify;">Convinced that all women should be free to decide whether and when to have children, Gates took her first step onto the global stage to make a stand for family planning. That step launched her into further efforts: to ensure women everywhere have access to every kind of job; to encourage men around the globe to share equally in the burdens of household work; to advocate for paid family leave for everyone; to eliminate gender bias in all its forms.
+            </p>
+            <p style="text-align: justify;">Throughout, Gates introduces us to her heroes in the movement towards equality, offers startling data, shares moving conversations she's had with women from all over the world—and shows how we can all get involved.
+            </p>
+            <p style="text-align: justify;">A personal statement of passionate conviction, this book tells of Gates' journey from a partner working behind the scenes to one of the world's foremost advocates for women, driven by the belief that no one should be excluded, all lives have equal value, and gender equity is the lever that lifts everything. 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <br><br>
+
+   <!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4" >
+  
+  <div class="container text-center text-md-left">
+
+    <div class="row text-center text-md-left mt-3 pb-3">
+      
+      
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" >
+        <h4 class="text-uppercase mb-4 font-weight-bold">Book Strike</h4>
+        <p>Here users can list their books for auction or users can auction a book.</p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" >
+        <h4 class="text-uppercase mb-4 font-weight-bold">Items</h4>
+        <p>
+          <a href="Fiction.html">Fiction Books</a>
+        </p>
+        <p>
+          <a href="Non-ficiton.html">Non-Fiction Books</a>
+        </p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h4 class="text-uppercase mb-4 font-weight-bold">Contact</h4>
+        <p>
+          <i class="fas fa-home mr-3"></i> 60, Tribune St, South Brisbane, 4101</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> bookstrike@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +61403194712</p>
+        
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-7 col-lg-8">
+
+        <p class="text-center text-md-left" style="font-weight: 500;">© 2020 Copyright:
+          <a href="#">
+            <strong> www.bookstrike.com</strong>
+          </a>
+        </p>
+
+      </div>
+      
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+
+  </head>
+
+  
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+  
+</html>
