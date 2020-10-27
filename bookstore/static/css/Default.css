@@ -1,0 +1,42 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.extra-margins {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #cc66ff 0%, #ffffff 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+footer.page-footer {
+    background-color: #3b295a;
+    margin-top: 2rem;
+}
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+#mainimage{
+    max-height: 800px;
+    min-height: 150px;
+    height: 35vw;
+    object-fit: cover;
+}
+#cardfooter{
+    background: linear-gradient(to bottom, #cc66ff 0%, #ffffff 100%);
+}

@@ -1,4 +1,4 @@
-from book-store import create_app
+from bookstore import create_app
 
 if __name__ == '__main__':
     napp = create_app()
