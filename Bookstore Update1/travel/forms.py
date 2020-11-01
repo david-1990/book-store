@@ -22,8 +22,8 @@ class ItemForm(FlaskForm):
     # this should already be there in the forms.py
 
 
-class CommentForm(FlaskForm):
-    text = TextAreaField('Comment', [InputRequired()])
+class ReviewForm(FlaskForm):
+    text = TextAreaField('Review', [InputRequired()])
     submit = SubmitField('Create')
 
 

@@ -39,20 +39,20 @@
 
   <hr>
 
-  <!-- Comments -->
+  <!-- Reviews -->
   <div class="row">
     <div class="col-md-12">
-      <h2>Comments</h1>
+      <h2>Reviews</h1>
     </div>
   </div>
 
-  {{wtf.quick_form(form, "/items/{0}/comment".format(item.id))}}
+  {{wtf.quick_form(form, "/items/{0}/review".format(item.id))}}
 
-  {% for comment in item.comments %}
+  {% for review in item.reviews %}
   <div class="row border-bottom">
     <div class="col-md-12">
-      <b>{{comment.user}}<span class="ml-2 text-muted">{{comment.created_at}}</span></b>
-      <p>{{comment.text}}</p>
+      <b>{{review.user}}<span class="ml-2 text-muted">{{review.created_at}}</span></b>
+      <p>{{review.text}}</p>
     </div>
   </div>
   {% endfor %}

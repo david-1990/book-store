@@ -15,24 +15,24 @@ bp = Blueprint('item', __name__, url_prefix='/items')
 def show(id):
     # item = get_item()
     item = Item.query.filter_by(id=id).first()
-    cform = CommentForm()  # create the comment form and passit to render_template
+    cform = ReviewForm()  # create the review form and passit to render_template
     # in the html this is access as a varible named form
     return render_template('items/show.html', item=item, form=cform)
 
 
-@bp.route('/<item>/comment', methods=['GET', 'POST'])
+@bp.route('/<item>/review', methods=['GET', 'POST'])
 @login_required #decorator between the route and view function 
-def comment(item):
+def review(item):
     # here the form is created
-    form = CommentForm()
+    form = ReviewForm()
     item_obj = Item.query.filter_by(id=item).first()
     if form.validate_on_submit():  # this is true only in case of POST method
-        comment = Comment(text=form.text.data,
+        review = Review(text=form.text.data,
                           item=item_obj, user=current_user)
 
-        db.session.add(comment)
+        db.session.add(review)
         db.session.commit()
-        print("Comment posted by the user:", form.text.data)
+        print("Review posted by the user:", form.text.data)
 
     # in any case we go back to the same page.
     # notice the signature of url_for
@@ -59,33 +59,6 @@ def create():
         return redirect(url_for('item.create'))
 
     return render_template('items/create_item.html', form=form)
-
-
-def get_item():
-    # creating the description of Brazil
-    b_desc = """Brazil is considered an advanced emerging economy.
-    It has the ninth largest GDP in the world by nominal, and eight by PPP measures.
-    It is one of the world\'s major breadbaskets, being the largest producer of coffee for the last 150 years."""
-    # an image location
-    image_loc = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFyC8pBJI2AAHLpAVih41_yWx2xxLleTtdshAdk1HOZQd9ZM8-Ag'
-    item = Item('Brazil', b_desc, image_loc, '10 R$')
-    # a comment
-    comment = Comment(
-        "User1", "Visited during the olympics, was great", '2019-11-12 11:00:00')
-    item.set_comments(comment)
-    return item
-
-
-def get_item2():
-    # creating the description of Brazil
-    b_desc = """Since that place doesnt exist, heres a house which includes all amenities a human would need."""
-    # an image location
-    image_loc = 'https://fairmonthomes.com.au/images/facades_2019/DG41.jpg?Action=thumbnail&Width=256&Height=256&algorithm=fill_proportional'
-    item = Item("Someone's house", b_desc, image_loc, '1 AUD$')
-    # a comment
-    comment = Comment("Tommy", "Wait, this is my house", '2020-09-2 2:00:00')
-    item.set_comments(comment)
-    return item
 
   # a new function
 def check_upload_file(form):
