@@ -17,7 +17,7 @@ def create_app():
     app.debug = True
     app.secret_key = 'anythingyoulike'
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///travel123.sqlite'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bookstore.sqlite'
     db.init_app(app)
 
     from .models import User # importing here to avoid circular references

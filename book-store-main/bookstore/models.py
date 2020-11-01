@@ -15,14 +15,13 @@ class Item(db.Model):
     __tablename__ = 'items'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
-    author = db.Column(db.String(80), nullable=False)
     isbn = db.Column(db.Integer, nullable=False)
     category = db.Column(db.String(80), nullable=False)
     description = db.Column(db.String(200), nullable=False)
     image = db.Column(db.String(400))
     currency = db.Column(db.String(3), nullable=False)
-    total_bids = db.Column(db.Integer)
     listing_status = db.Column(db.String(10))
+    timeleft = db.Column(db.String(80))
 
     reviews = db.relationship('Review', backref='item')
 
