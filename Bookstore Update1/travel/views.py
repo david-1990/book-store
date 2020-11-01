@@ -9,15 +9,6 @@ from .models import Item
 # import name - second argument - helps identify the root url for it 
 mainbp = Blueprint('main', __name__)
 
-#@mainbp.route('/')
-#def index():
-#    if 'email' in session:
-#        str='<h1>Email in session: ' + session['email'] + '</h1>'
-#    else:
-#        str='<h1>No email  in session</h1>'
-#    return str
-#    return render_template('index.html')
-
 @mainbp.route('/')
 def index():
     items = Item.query.all()
@@ -34,17 +25,3 @@ def search():
         return render_template('index.html', items=items)
     else:
         return redirect(url_for('main.index'))
-
-#@mainbp.route('/login', methods=['GET','POST'])#route name with
-#def login(): # view function
-#    session['email'] = request.values.get('email')
-#    print(request.values.get('email'))
-#    print(request.values.get('pwd'))
-#    return render_template('login.html')
-
-
-#@mainbp.route('/logout')
-#def logout():
-#    if 'email' in session:
-#        session.pop('email', None)
-#        return 'Session has been cleared'
