@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms.fields import TextAreaField, SubmitField, StringField, PasswordField
+from wtforms.fields import TextAreaField, SubmitField, StringField, PasswordField, RadioField
 from wtforms.validators import InputRequired, Length, Email, EqualTo
 from flask_wtf.file import FileRequired, FileField, FileAllowed
 
@@ -12,6 +12,7 @@ class ItemForm(FlaskForm):
     # description meets the length requirements
     description = TextAreaField('Description',
                                 validators=[InputRequired()])
+    category = RadioField(label='Category', choices=[('Fiction','Fictional Books'),('Non-Fiction','Non-Fictional Books'),('Educational','Educational Books'),('Self-Help','Self-Help Books')])
     image = FileField('Product Image', validators=[FileRequired(message='Image can not be empty'),
                                                        FileAllowed(ALLOWED_FILE, message='Only support png, jpg, JPG, PNG, bmp')])
     isbn = StringField('ISBN', validators=[InputRequired()])

@@ -5,6 +5,7 @@ from . import db
 import os
 from werkzeug.utils import secure_filename
 from flask_login import login_required, current_user
+from sqlalchemy.sql.functions import func
 
 # create a blueprint
 bp = Blueprint('item', __name__, url_prefix='/items')
@@ -46,6 +47,7 @@ def create():
     if form.validate_on_submit():
         db_file_path = check_upload_file(form)
         item = Item(name=form.name.data,
+                                category=form.category.data,
                                   description=form.description.data,
                                   image=db_file_path,
                                   currency=form.currency.data,
@@ -64,6 +66,7 @@ def create():
 def bid():
     print('Method type: ', request.method)
     form = BidForm()
+    max_bids = db.session.query(db.func.max(Bid.id)).scalar()
     if form.validate_on_submit():
         bid = Bid(highest_bid=form.highest_bid.data)
         db.session.add(bid)
@@ -72,7 +75,7 @@ def bid():
         print('Successfully made a bid', 'Success')
         return redirect(url_for('item.bid'))
 
-    return render_template('items/bid.html', form=form)
+    return render_template('items/bid.html', form=form, max_bids=max_bids)
 
   # a new function
 def check_upload_file(form):

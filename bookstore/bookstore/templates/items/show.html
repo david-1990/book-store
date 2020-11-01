@@ -12,8 +12,7 @@
       </div>
 
       <div class="float-right text-right">
-        <p class="mb-0">1 AUD equals</p>
-        <h2 id="exchange-rate">{{item.currency}}</h1>
+        <h2 id="exchange-rate">Current price: ${{ Bid.highest_bid}} AUD</h1>
       </div>
     </div>
   </div>
@@ -26,8 +25,10 @@
           <div class="media">
             <img class="align-self-start mr-3" src="{{item.image}}" alt="Rome, Italy" style="max-width: 250px;">
             <div class="media-body">
-              <small class="font-weight-bold text-muted">Stay 2 nights</small>
               <h5 class="mt-0">{{item.name}}</h5>
+              <h5 class="mt-0">Total bids: 
+                {{max_bids}}
+              </h5>
               <p>{{item.description}}</p>
               <a href="{{ url_for('item.bid') }}" class="btn btn-danger">Make a Bid</a>
             </div>
