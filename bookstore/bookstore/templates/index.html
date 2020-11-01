@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+
+
+{% endblock %}
+
+
+{% block content %}
+<!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid card card-image"
+  style="background-image: url(../static/Images/jumbo2.jpg); background-size:contain;">
+  <div class="container">
+    <div class="row justify-content-center mt-5 pb-4">
+      <div class="col-md-8">
+        <div class="jumbotron shadow py-4 mb-5 ">
+          <h1 class="text-center">Find your desired book</h1>
+          <form class="form-inline d-flex flex-nowrap" action="{{url_for('main.search')}}">
+            <input type="text" name="search" class="form-control flex-grow-1 my-1 mr-sm-2"
+              id="inlineFormCustomSelectPref">
+            <button type="submit" class="flex-shrink-1 btn btn-primary my-1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Main Header-->
+<h1 style="text-align: center; font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Featured Books
+</h1>
+<hr class="extra-margins">
+{% if items %}
+<div class="row justify-content-center">
+  {% for item in items %}
+  <div class="card mb-5 mr-5 px-0 col-md-3">
+    <img class="card-img-top" height="400rem" src="{{item.image}}" alt="{{item.name}}">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <p class="card-text">{{item.currency}}</p>
+      
+      <a href="{{url_for('item.show', id=item.id)}}" class="btn btn-danger">View Details</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endif %}
+</div>
+
+</div>S
+
+{% endblock %}
